@@ -9,5 +9,6 @@ user = {
 
 
 def extract_user(user_id):
-    return user[user_id]
+    return user.get(user_id)
+
 
