@@ -18,7 +18,7 @@ class TestC2(TestCase):
         :return:
         """
         # テスト対象メソッド
-        actual = unittype.judge(160)
+        actual = unittype.raging_spirits(160)
 
         self.assertEqual('乗れる', actual)
 
@@ -28,7 +28,7 @@ class TestC2(TestCase):
         :return:
         """
         # テスト対象メソッド
-        actual = unittype.judge(200)
+        actual = unittype.raging_spirits(200)
 
         self.assertEqual('乗れない', actual)
 
@@ -38,6 +38,6 @@ class TestC2(TestCase):
         :return:
         """
         # テスト対象メソッド
-        actual = unittype.judge(200)
+        actual = unittype.raging_spirits(200)
 
         self.assertEqual('乗れない', actual)

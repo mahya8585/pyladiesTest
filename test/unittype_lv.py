@@ -15,7 +15,7 @@ class TestLv(TestCase):
         :return:
         """
         # テスト対象メソッド
-        actual = unittype.judge(0)
+        actual = unittype.raging_spirits(0)
 
         self.assertEqual('乗れない', actual)
 
@@ -25,7 +25,7 @@ class TestLv(TestCase):
         :return:
         """
         # テスト対象メソッド
-        actual = unittype.judge(116)
+        actual = unittype.raging_spirits(116)
 
         self.assertEqual('乗れない', actual)
 
@@ -35,7 +35,7 @@ class TestLv(TestCase):
         :return:
         """
         # テスト対象メソッド
-        actual = unittype.judge(117)
+        actual = unittype.raging_spirits(117)
 
         self.assertEqual('乗れる', actual)
 
@@ -45,7 +45,7 @@ class TestLv(TestCase):
         :return:
         """
         # テスト対象メソッド
-        actual = unittype.judge(118)
+        actual = unittype.raging_spirits(118)
 
         self.assertEqual('乗れる', actual)
 
@@ -55,7 +55,7 @@ class TestLv(TestCase):
         :return:
         """
         # テスト対象メソッド
-        actual = unittype.judge(195)
+        actual = unittype.raging_spirits(195)
 
         self.assertEqual('乗れる', actual)
 
@@ -65,7 +65,7 @@ class TestLv(TestCase):
         :return:
         """
         # テスト対象メソッド
-        actual = unittype.judge(196)
+        actual = unittype.raging_spirits(196)
 
         self.assertEqual('乗れない', actual)
 
