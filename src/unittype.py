@@ -8,7 +8,7 @@
 """
 
 
-def judge(height):
+def raging_spirits(height):
     if 117 <= height and height < 196:
         return '乗れる'
     else:
