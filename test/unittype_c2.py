@@ -14,7 +14,7 @@ class TestC2(TestCase):
     """
     def test_can_ride(self):
         """
-        身長が160cmの場合、乗れると判定される
+        身長が160cmの場合、乗れると判定される(TT)
         :return:
         """
         # テスト対象メソッド
@@ -24,7 +24,7 @@ class TestC2(TestCase):
 
     def test_cannot_ride_too_tall(self):
         """
-        身長が200cmの場合、乗れないと判定される
+        身長が200cmの場合、乗れないと判定される(TF)
         :return:
         """
         # テスト対象メソッド
@@ -34,10 +34,10 @@ class TestC2(TestCase):
 
     def test_cannot_ride_too_short(self):
         """
-        身長が200cmの場合、乗れないと判定される
+        身長が100cmの場合、乗れないと判定される(FT)
         :return:
         """
         # テスト対象メソッド
-        actual = unittype.raging_spirits(200)
+        actual = unittype.raging_spirits(100)
 
         self.assertEqual('乗れない', actual)

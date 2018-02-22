@@ -19,23 +19,9 @@ class TestExtract(TestCase):
         # テスト対象メソッド
         actual = architect.extract_user(1)
 
-        # データkeyはnameとtypeを保持していること
-        expected_key = ['name', 'type']
-        for key in expected_key:
-            self.assertTrue(key in actual)
-
         # 名前がMickeyであること
         self.assertEqual('Mickey', actual['name'])
 
         # typeがネズミであること
         self.assertEqual('ネズミ', actual['type'])
 
-    def test_not_get(self):
-        """
-        存在しないIDの場合、データが取得できないこと
-        :return:
-        """
-        actual = architect.extract_user(0)
-
-        # 取得できないこと
-        self.assertIsNone(actual)
